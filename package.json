@@ -1,0 +1,52 @@
+{
+  "name": "chatgpt-next",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "db:migrate": "prisma migrate dev",
+    "db:studio": "prisma studio",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@ai-sdk/google": "^1.0.3",
+    "@clerk/nextjs": "^6.5.1",
+    "@emailjs/browser": "^4.4.1",
+    "@prisma/client": "^5.19.0",
+    "@radix-ui/react-dialog": "^1.1.2",
+    "ai": "^4.0.4",
+    "antd": "^5.20.3",
+    "axios": "^1.7.7",
+    "class-variance-authority": "^0.7.0",
+    "classnames": "^2.5.1",
+    "clsx": "^2.1.1",
+    "lodash": "^4.17.21",
+    "lucide-react": "^0.436.0",
+    "mongodb": "^6.8.1",
+    "next": "14.2.6",
+    "nodemailer": "^6.9.16",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-markdown": "^9.0.1",
+    "react-share": "^5.1.0",
+    "react-syntax-highlighter": "^15.5.0",
+    "rehype-raw": "^7.0.0",
+    "remark-gfm": "^4.0.0",
+    "tailwind-merge": "^2.5.4",
+    "tailwindcss-animate": "^1.0.7",
+    "zustand": "^4.5.5"
+  },
+  "devDependencies": {
+    "@types/node": "^20.16.7",
+    "@types/nodemailer": "^6.4.17",
+    "@types/react": "^18.3.9",
+    "@types/react-dom": "^18",
+    "@types/react-syntax-highlighter": "^15.5.13",
+    "postcss": "^8",
+    "prisma": "^5.19.0",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5.6.2"
+  }
+}

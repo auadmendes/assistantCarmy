@@ -1,0 +1,36 @@
+POST http://localhost:3334/check-car-parts
+Content-Type: application/json
+
+{
+    "carModel": "Volkswagen Gol",
+    "carYear": "2010",
+    "carPart": "brake pads"
+}
+
+###
+
+
+curl -X POST http://localhost:3000/api/cardetails \
+-H "Content-Type: application/json" \
+-d '{
+  "messages": [
+    {
+      "role": "user", 
+      "content": "I need brake pads for a 2010 Volkswagen Gol"
+    }
+  ]
+}'
+
+
+### Test sending email with API ###
+
+POST http://localhost:3000/api/send-email
+Content-Type: application/json
+
+{
+    "firstName": "Luciano",
+    "lastName": "Horta",
+    "email": "luciano@example.com",
+    "phone": "123456789",
+    "message": "Hello, I want to know more about your service!"
+}

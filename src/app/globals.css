@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Roboto", sans-serif !important;
+  font-weight: 500;
+}
+
+.dark {
+  --primary: #221e25; /* Dark background with a slight metallic feel */
+  --secondary: #3b2e43; /* Darker secondary for contrast */
+  --body: #f5f3f7;
+  --text: #f5f3f7; /* user,Ai text color*/
+  --title: #f5f3f7; /*title colour*/
+  --lightText: #f5f3f7;
+  --accent: #d6c6e1;
+  --button: #9a73b5;
+  --card: #221e25;
+  --plusicon: #10a37f; /* icon color*/
+  --border: 100, 116, 139; /* Steel gray for borders */
+  --border-primary: #d6d6d6; /*newchat border*/
+  --border-secondary: #e8ecef;
+  --textarea-text: #4a4a4a;
+  --accent3: #ffffff;
+}
+
+.light {
+  --primary: #e9e4ed; /*sidebar bg color*/
+  --secondary: #ffffff; /*chatarea bg color*/
+  --body: #f5f3f7; /*mechanic page bg color*/
+  --text: #4a4a4a; /* user,Ai text color*/
+  --title: #000000; /*title colour*/
+  --lightText: #f5f3f7;
+  --accent: #d6c6e1;
+  --button: #9a73b5;
+  --card: #f3f5f7;
+  --plusicon: #10a37f; /* icon color*/
+  --border: #f5f3f7; /* user text border*/
+  --border-primary: #d6d6d6; /*newchat border*/
+  --border-secondary: #e8ecef;
+  --textarea-text: #4a4a4a;
+  --accent3: #9a73b5;
+}
+
+.cl-cardBox {
+  box-shadow: none !important;
+  border: 1px solid #8b5fbf !important;
+  border-radius: 2px !important;
+}
+
+.cl-internal-ttumny {
+  background-color: #8b5fbf;
+}
+.cl-internal-ttumny:hover {
+  background-color: #61398f !important;
+}
+
+/* Repeating Linear Gradient */
+.cl-internal-piyvrh {
+  background: repeating-linear-gradient(
+    -45deg,
+    rgba(154, 115, 181, 0.45),
+    /* Dark color with 7% opacity */ rgba(154, 115, 181, 0.3) 100%,
+    rgba(214, 198, 225, 0.2) 100%,
+    /* Light color with 11% opacity */ rgba(214, 198, 225, 0.11) 100%
+  );
+  mask-image: linear-gradient(transparent 0%, black);
+}
+
+/* Ant Design Overrides */
+.ant-spin-dot-item {
+  background-color: #61398f !important;
+}
+
+.ant-drawer-close {
+  color: var(--accent2) !important;
+
+  margin: 10px !important;
+}
+
+.ant-drawer-content-wrapper {
+  background-color: var(--primary) !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  width: auto !important;
+}
+
+.ant-drawer-header-title {
+  background: var(--primary) !important;
+}
+
+/* Remove padding and margin from the drawer content */
+.ant-drawer-content-wrapper {
+  background-color: var(--primary) !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+/* Remove padding and margin from the drawer header */
+.ant-drawer-header {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+/* Remove padding and margin from the drawer body */
+.ant-drawer-body {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+/* Remove padding and margin from the drawer footer */
+.ant-drawer-footer {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.ant-switch-checked {
+  background-color: var(--secondary) !important;
+}
+
+.cl-internal-piyvrh {
+  background: repeating-linear-gradient(
+    -45deg,
+    rgba(154, 115, 181, 0.45),
+    /* Dark color with 7% opacity */ rgba(154, 115, 181, 0.3) 100%,
+    rgba(214, 198, 225, 0.2) 100%,
+    /* Light color with 11% opacity */ rgba(214, 198, 225, 0.11) 100%
+  );
+  mask-image: linear-gradient(transparent 0%, black);
+}
+
+.ant-spin-dot-item {
+  background-color: #61398f !important;
+}
+
+/* scroll bar styling */
+
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+::-webkit-scrollbar-track {
+  background: #4b4b4b;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #818181;
+}
+
+/* Markdown Styling */
+.markdown > * {
+  all: revert;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: bold;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+}
+
+.text-wrap {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  word-break: break-all;
+  white-space: normal;
+}
+
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  overflow-x: auto;
+}
+
+/* Custom Switch Styling */
+.custom-switch .ant-switch {
+  background-color: #d9d9d9; /* Background color when unchecked */
+}
+
+.custom-switch .ant-switch-checked {
+  background-color: #ff0000; /* Background color when checked */
+}
+
+.custom-switch .ant-switch-handle {
+  background-color: #fff; /* Handle color */
+}
+
+.custom-switch .ant-switch-checked .ant-switch-handle {
+  background-color: #fff; /* Handle color when checked */
+}
+
+/* Override the inner content colors */
+.custom-switch .ant-switch-inner-checked {
+  color: #fff; /* Color of the checked icon */
+}
+
+.custom-switch .ant-switch-inner-unchecked {
+  color: #000; /* Color of the unchecked icon */
+}
+
+.ant-modal div {
+  background: var(--primary) !important;
+  color: var(--text) !important;
+}
